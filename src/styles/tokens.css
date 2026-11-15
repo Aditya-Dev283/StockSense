@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --white: #FFFFFF;
+  --grey: #E5E5E5;
+  --grey-header: #F2F2F2;
+  --grey-hover: #F7F7F7;
+  --orange: #FCA311;
+  --orange-hover: #E8950F;
+  --navy: #14213D;
+  --black: #000000;
+  --text-dim: #5B6478;
+  
+  --font-sans: 'Inter', sans-serif;
+}
+
+/* Tabular numbers & spacing for part codes and barcodes */
+.code-num {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+}
+
+/* High Contrast Mode */
+body.high-contrast {
+  --grey: #000000;
+  --text-dim: #000000;
+}
+
+body.high-contrast input,
+body.high-contrast select,
+body.high-contrast textarea,
+body.high-contrast .proto-card,
+body.high-contrast .proto-btn-secondary {
+  border: 2px solid #14213D !important;
+}
+
+/* Large Workshop Readability (125%) */
+body.workshop-mode {
+  font-size: 115%;
+}
+
+/* Focus outline for accessibility (2px solid #14213D) */
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--navy) !important;
+  outline: 2px solid var(--navy) !important;
+  outline-offset: 0 !important;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--navy) !important;
+  outline-offset: 2px !important;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFFFFF;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E5E5E5;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5B6478;
+}

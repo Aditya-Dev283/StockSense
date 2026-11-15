@@ -1,0 +1,32 @@
+/* Print Stylesheet for Issue Slips and Reports */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 12pt;
+  }
+
+  /* Hide navigation, sidebar, topbar, buttons when printing */
+  nav, aside, header, .no-print, button, .neu-btn-primary, .neu-btn-secondary {
+    display: none !important;
+  }
+
+  /* Reset all neumorphic shadows to clean print borders */
+  .neu-raised, .neu-raised-sm, .neu-inset, .neu-circle {
+    box-shadow: none !important;
+    background: transparent !important;
+    border: 1px solid #333333 !important;
+    border-radius: 4px !important;
+  }
+
+  .print-area {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 10mm !important;
+  }
+
+  .page-break {
+    page-break-after: always;
+  }
+}

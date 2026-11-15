@@ -1,0 +1,24 @@
+/* Minimalist Flat UI - No Neumorphic Shadows (Proto.io Friendly) */
+.neu-raised,
+.neu-raised-sm,
+.neu-inset,
+.neu-inset-sm,
+.neu-circle,
+.neu-circle-sm {
+  background-color: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  border-radius: 8px;
+  box-shadow: none !important;
+}
+
+.neu-raised:hover,
+.neu-raised-sm:hover {
+  background-color: #F7F7F7;
+}
+
+.neu-inset-pill {
+  border-radius: 9999px;
+  border: 1px solid #14213D;
+  background-color: transparent;
+  box-shadow: none !important;
+}
